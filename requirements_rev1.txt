@@ -1,0 +1,24 @@
+function td = delay_laws3Dint(Mx,My,sx,sy,thetat, phi, ...
+    theta2,DT0, DF, c1,c2, plt)
+% td = delay_laws3Dint(Mx,My,sx,sy,thetat,phi, theta2, DT0,DF,c1,c2,plt)
+% calculates the delay laws for steering and focusing a 2-D array 
+% through a planar interface between two media in three dimensions. 
+% (Mx, My)are the number of elements in the (x', y') directions, (sx, sy)
+% are the pitches (in mm), and thetat is the the angle that array
+% makes with the interface(in degrees).Steering and focusing to a point in
+% the second medium is specified by giving the angles theta2 and 
+% phi,(both in degrees). The height of the center of the array above
+% the interface is DT0 (in mm).The wave speeds of the first and second 
+% media are (c1, c2), respectively (in m/sec). The plt argument is a string
+% ('y' or 'n')that specifies if a plot of the rays from the centroids
+% of the elements to the point in the second medium is wanted ('y') or
+% not ('n'). Plotting is not done if steering only (DF = inf) is specified.
+
+streamlit
+numpy
+pandas
+matplotlib
+scipy
+
+& "C:\Users\Utilisatrice\AppData\Local\Programs\Python\Python314\python.exe" -m streamlit run delay_law3Dint_rev3.py
+
